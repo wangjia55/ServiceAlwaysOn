@@ -18,6 +18,7 @@ public class AlwaysOnService extends BaseService {
 
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
+		Log.e(LOG_TAG, "onStartCommand--:");
 		if (isRunning == false) {
 			// run something
 			backgroundService = Executors.newSingleThreadScheduledExecutor();

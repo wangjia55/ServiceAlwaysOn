@@ -3,6 +3,7 @@ package com.jacob.service.demo;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 
 import com.jacob.service.demo.service.Bootstrap;
 
@@ -15,5 +16,9 @@ public class MainActivity extends Activity {
 		Bootstrap.startAlwaysOnService(this, "Main");
 	}
 
+
+	public void stopService(View view){
+		Bootstrap.stopAlwaysOnService(this);
+	}
 
 }
